@@ -27,7 +27,7 @@ class AddTodo extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <input type="text" name="" onChange={this.handleChange} />
+        <input type="text" value={this.state.input} onChange={this.handleChange} />
         <input type="submit" />
       </form>
       );
